@@ -1,1 +1,55 @@
-main.css
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-head {
+    display: inline-block;
+    width: 100px;
+    height: 100rem;
+    background-color: rgba(59, 13, 193, 0.7);
+}
+
+.logo-link {
+    margin: 25px 25px 0 25px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #69EE00;
+    border-radius: 10px;
+    width: 50px;
+    height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #F4FFEB;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #5B40A8;
+    border: 1px solid #6C4ACC;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.icon-burger {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+}
+
+.main-nav ul {
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+}
