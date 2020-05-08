@@ -1,55 +1,85 @@
 body {
     margin: 0;
     padding: 0;
+    background: #F6F6F6;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
 }
 
-.main-head {
-    display: inline-block;
-    width: 100px;
+.main-header {
+    width: 99px;
     height: 100rem;
-    background-color: rgba(59, 13, 193, 0.7);
+    border-right: 1px solid #5236A3;
+    background-color: #4A338A;
 }
 
 .logo-link {
-    margin: 25px 25px 0 25px;
     display: inline-block;
-    text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    background: #69EE00;
-    border-radius: 10px;
-    width: 50px;
-    height: 26px;
-    font-family: Roboto;
-    font-style: normal;
+    width: 30px;
+    height: 24px;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    background-color: #69EE00;
+    color: #F4FFEB;
     font-weight: bold;
     font-size: 24px;
-    line-height: 24px;
-    color: #F4FFEB;
+    border-radius: 10px;
+    padding: 13px 10px;
+}
+
+.main-content {
+    width: 864px;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.breadcrubs {
+    font-size: 14px;
+    line-height: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+.breadcrubs a {
+    color: #818181;
     text-decoration: none;
 }
 
-.main-nav {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    background-color: #5B40A8;
-    border: 1px solid #6C4ACC;
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courses h2 {
+    width: 864px;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.course-cart {
+    display: flex;
+    width: 260px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
     border-radius: 10px;
-    position: relative;
-    margin-top: 45px;
-    margin-left: 25px;
+    overflow: hidden;
 }
 
-.icon-burger {
-    position: absolute;
-    top: 16px;
-    left: 14px;
-}
-
-.main-nav ul {
-    display: inline-block;
-    width: 100px;
-    position: absolute;
-    left: 100px;
+.course-cart a {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    min-height: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #000000;
 }
