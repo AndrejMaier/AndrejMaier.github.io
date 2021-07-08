@@ -7,8 +7,14 @@ body {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-size: 14px;
-	background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+	background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*background-image: linear-gradient(to right, #868f96 0%, #596164 100%);*/
 }
 
 .main-header {
@@ -45,6 +51,7 @@ body {
 	margin: 0 10px;
 	padding: 0 30px;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: #c9dbe9;
 	font-size: 18px;
 	font-weight: 100;
@@ -56,84 +63,48 @@ body {
 
 main {
 	width: 1400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	padding: 20px;
 }
 
 .title {
+	text-align: center;
 	text-transform: uppercase;
-	color: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);;
+	font-size: 98px;
+	color: #c9dbe9;
 	position: relative;
-	height: 75vh;
-	display: flex;
-	align-items: center;
 	margin: 0;
 }
 
 .title--up {
 	font-size: 28px;
 	position: absolute;
-	top: 30vh;
-	left: 30vw;
-	color: #4D163D;
+	top: -25px;
+	left: 121px;
+	color: #a1287f;
+	font-family: 'Zen Tokyo Zoo', cursive;
  
 }
 .title--down {
 	font-size: 28px;
+	font-family: 'Zen Tokyo Zoo', cursive;
 	position: absolute;
-	bottom: 25vh;
-	right: 30vw;
+	bottom: -25px;
+	right: 0;
 	color: #FDB731;
 }
 
+.main-footer{
+	width: 1400px;
+	margin: 0 auto;
+	padding: 20px
+}
 
 .hidden {
 	display: none;
 }
 
-svg {
-	display: block;
-	font-size: 170px;
-	font-family: 'Montserrat';
-	width: 960px;
-	height: 300px;
-	margin: 0 auto;
-}
 
-.text-copy {
-	fill: none;
-	stroke: white;
-	stroke-dasharray: 6% 29%;
-	stroke-width: 5px;
-	stroke-dashoffset: 0%;
-	animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-stroke: #4D163D;
-animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-stroke: #840037;
-animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-stroke: #BD0034;
-animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-stroke: #BD0034;
-animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-stroke: #FDB731;
-animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-100% {stroke-dashoffset: -35%;}
-}
