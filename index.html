@@ -2,8 +2,8 @@
 <html>
 <head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,400;1,100&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
   <title>Andrej Maier</title>
   <meta charset="utf-8">
@@ -12,17 +12,33 @@
 	<header class="main-header">
 		<a href="" class="logo">A<br>M</a>
 		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="#">Home</a></li>
+				<li class="main-nav__item"><a href="#">Projects</a></li>
+				<li class="main-nav__item"><a href="#">Contact</a></li>
+				<li class="main-nav__item"><a href="#">About</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<h1 class="hidden">Andrej Maier - Web developer</h1>
-		<p class="title"><span class="title--up">I am</span>Andrej Maier<span class="title--down">A WEB DEVELOPER</span></p>
+		<div class="title">
+			<span class="title--up">I am</span>
+			<span class="title--down">A WEB DEVELOPER</span>
+			<svg viewBox="0 0 1440 300">
+				<symbol id="s-text">
+					<text text-anchor="middle" x="50%" y="80%">ANDREJ MAIER</text>
+				</symbol>
+				<g class = "g-ants">
+					<use xlink:href="#s-text" class="text-copy"></use>
+					<use xlink:href="#s-text" class="text-copy"></use>
+					<use xlink:href="#s-text" class="text-copy"></use>
+					<use xlink:href="#s-text" class="text-copy"></use>
+					<use xlink:href="#s-text" class="text-copy"></use>
+				</g>
+			</svg>
+		</div>
+		
 	</main>
 	<footer class="main-footer">
 					
