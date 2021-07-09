@@ -74,6 +74,7 @@ body {
 .main-nav__item a {
 	margin: 0 10px;
 	padding: 0 30px;
+	padding-bottom: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #c9dbe9;
@@ -81,11 +82,18 @@ body {
 	font-weight: 100;
 }
 
+.main-nav__item a.active {
+	color: #feb730;
+	padding-bottom: 13px;
+	border-bottom: 2px solid #feb730;
+	font-weight: 400;
+}
+
 .main-nav__item:last-child a {
 	margin-right: 0;
 }
 
-main {
+.main-homepage {
 	width: 1400px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -96,6 +104,12 @@ main {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.main-innerpage {
+	width: 1400px;
 	margin: 0 auto;
 	padding: 20px;
 }
