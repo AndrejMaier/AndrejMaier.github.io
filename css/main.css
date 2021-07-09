@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html,
 body {
 	margin: 0;
@@ -7,12 +14,20 @@ body {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	font-size: 14px;
-	background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+	background: #0f2027; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0f2027), color-stop(#203a43), to(#2c5364));
+  background: -o-linear-gradient(left, #0f2027, #203a43, #2c5364);
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	/*background-image: linear-gradient(to right, #868f96 0%, #596164 100%);*/
 }
@@ -21,9 +36,15 @@ body {
 	width: 1400px;
 	margin: 0 auto;
 	padding: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .logo {
@@ -41,6 +62,8 @@ body {
 }
 
 .main-nav__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -63,9 +86,15 @@ body {
 
 main {
 	width: 1400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -101,6 +130,39 @@ main {
 	width: 1400px;
 	margin: 0 auto;
 	padding: 20px
+}
+
+.social-footer {
+	font-size: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.social-icon {
+	width: 24px;
+	height: 24px;
+	margin:3px 0;
+}
+
+.social-icon--vk {
+	background: url(/./img/vk.svg) no-repeat;
+}
+
+.social-icon--skype {
+	background: url(/./img/skype.svg) no-repeat;
+}
+
+.social-icon--telegram {
+	background: url(/./img/telegram.svg) no-repeat;
+}
+
+.social-icon--linkedin {
+	background: url(/./img/linkedin.svg) no-repeat;
 }
 
 .hidden {
