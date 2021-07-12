@@ -48,18 +48,15 @@ body {
 }
 
 .logo {
-	font-family: 'Zen Tokyo Zoo', cursive;
-	font-size: 12px;
-	color: #c9dbe9;
-	text-decoration: none;
 	display: inline-block;
-	text-align: center;
-	width: 40px;
-	height: 30px;
-	border: 1px solid #c9dbe9;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	border-radius: 5px;
+	background-image: url(/img/logo.svg);
+	width: 42px;
+	height: 39px;
+	font-size: 0;
+}
+
+.logo:hover {
+	background-image: url(/img/logo-active.svg);
 }
 
 .main-nav__list {
@@ -202,7 +199,7 @@ body {
 }
 
 .projects h2 {
-	font-size: 28px;
+	font-size: 36px;
 	font-weight: bold;
 	color: #c9dbe9;
 	text-align: center;
@@ -249,7 +246,7 @@ body {
 
 .project-link {
 	color: #FDB731;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin: 10px;
@@ -258,6 +255,63 @@ body {
 
 .project-link:hover {
 	text-decoration: underline;
+}
+
+.my-form {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 26px;
+	color: #c9dbe9;
+	font-weight: 100;
+}
+
+.my-form label {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.my-form input {
+	width: 300px;
+	height: 24px;
+	font-size: 22px;
+	border-radius: 5px;
+	border: none;
+}
+
+.my-form textarea {
+	width: 300px;
+	height: 100px;
+	border-radius: 5px;
+	border: none;
+	font-size: 22px;
+}
+
+.my-form input.btn-submit {
+	margin-top: 20px;
+	width: 150px;
+	height: 40px;
+	padding: 5px 10px;
+	text-align: center;
+	background-color: #FDB731;
+	border: none;
+	border-radius: 5px;
+}
+
+.my-form input.btn-submit:hover {
+	background-color: #c58e28;
+}
+.my-form input.btn-submit:active {
+	background-color: #8a641d;
+}
+
+.in-dev {
+	text-align: center;
+	font-size: 22px;
+	color: #FDB731;
 }
 
 
