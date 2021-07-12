@@ -33,7 +33,7 @@ body {
 }
 
 .main-header {
-	width: 1400px;
+	width: 1380px;
 	margin: 0 auto;
 	padding: 20px;
 	display: -webkit-box;
@@ -94,7 +94,7 @@ body {
 }
 
 .main-homepage {
-	width: 1400px;
+	width: 1380px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -109,7 +109,7 @@ body {
 }
 
 .main-innerpage {
-	width: 1400px;
+	width: 1380px;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -142,7 +142,7 @@ body {
 }
 
 .main-footer{
-	width: 1400px;
+	width: 1380px;
 	margin: 0 auto;
 	padding: 20px
 }
@@ -199,6 +199,65 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.projects h2 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #c9dbe9;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.projects__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.projects__item {
+	position: relative;
+	width: 500px;
+	height: 278px;
+	margin: 20px;
+}
+
+.project-image {
+	width: 500px;
+	height: 278px;
+}
+
+.project-hover {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 278px;
+	background-color: rgba(39, 48, 51, 0.8);
+}
+
+.projects__item:hover  .project-hover{
+	display: flex;
+}
+
+.project-link {
+	color: #FDB731;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.project-link:hover {
+	text-decoration: underline;
 }
 
 
