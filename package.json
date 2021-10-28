@@ -4,23 +4,25 @@
   "description": "Шаблон автоматизации с использованием Gulp4 и Sass",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndrejMaier/Template-Gulp_Sass.git"
+    "url": "git@github.com:AndrejMaier/AndrejMaier.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndrejMaier/Template-Gulp_Sass/issues"
+    "url": "https://github.com/AndrejMaier/AndrejMaier.github.io/issues"
   },
-  "homepage": "https://github.com/AndrejMaier/Template-Gulp_Sass#readme",
+  "homepage": "https://github.com/AndrejMaier/AndrejMaier.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "browser-sync": "^2.27.6",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^7.1.0",
@@ -33,7 +35,6 @@
     "postcss": "^8.3.11",
     "sass": "^1.43.3"
   },
-  "dependencies": {},
   "browserslist": [
     "last 2 versions",
     "IE 11",
