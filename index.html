@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,400;1,100&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+  <title>Andrej Maier</title>
+  <meta charset="utf-8">
+</head>
+<body>
+	<header class="main-header">
+		<nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+      </ul>
+      <button type="button" class="nav__mobile-btn nav__mobile-btn--close"></button>
+    </nav>
+    <a href="mobile-menu.html" class="nav__mobile-btn"></a>
+	</header>
+	<main>
+    <section class="description">
+      <h1 class="description__title">Andrej<br>Maier</h1>
+      <p class="description__text">Junior Web-Entwickler<br>33 Years old, Heinsberg</p>
+      <p class="lang"><span class="lang--ru">ru</span><span class="lang--eng">eng</span></p>
+      <picture>
+        <source src="./img/i.webp" type="webp">
+        <img src="#" alt="Andrej Maier" class="description__img">
+      </picture>
+    </section>
+    <section class="about-me">
+      <h2 class="about-me__title"></h2>
+      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
+      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
+      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title">Skills</h2>
+      <p class="skills__text">I know</p>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <h3 class="skills__item-title">HTML5</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">CSS3</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">JS</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">SASS</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">Gulp</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">Bootstrap</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">Figma</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3 class="skills__item-title">Photoshop</h3>
+          <p class="skills__indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </li>
+      </ul>
+    </section>
+	</main>
+	<footer class="main-footer">
+    <h2>Contact</h2>
+    <p>Want to know more or just chat?<br> You are welcome!</p>
+    <ul class="social">
+      <li class="social__item"><a href="" class="social__link"></a></li>
+      <li class="social__item"><a href="" class="social__link"></a></li>
+      <li class="social__item"><a href="" class="social__link"></a></li>
+      <li class="social__item"><a href="" class="social__link"></a></li>
+    </ul>
+	</footer>
+  <section class="modal">
+    <h2>Write Me</h2>
+    <form id="contact-form" class="my-form">
+      <input type="hidden" name="contact_number">
+      <label>Name</label>
+      <input type="text" name="user_name" id="name">
+      <label>Email</label>
+      <input type="email" name="user_email" id="email">
+      <label>Message</label>
+      <textarea name="message" id="message"></textarea>
+      <button type="submit" class="btn-submit">Send</button>
+    </form>
+  </section>
+  <script src="./js/main.min.js"></script>
+</body>
+</html>
