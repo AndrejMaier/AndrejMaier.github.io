@@ -1,0 +1,34 @@
+.ad {
+  width: 280px;
+  height: 140px;
+  position: relative;
+  &__title {
+    font-size: 72px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 78px;
+  }
+  &__text {
+    position: absolute;
+    font-size: 28px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    top: 0;
+    margin: 0;
+    &--before {
+      position: absolute;
+      top: 77px;
+      width: 29px;
+      height: 65px;
+      color: $vermilion;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+    &--after {
+      position: absolute;
+      top: -70px;
+      width: 280px;
+      color:$maize-crayola;
+    }
+  }
+}

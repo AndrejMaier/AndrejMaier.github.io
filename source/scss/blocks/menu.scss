@@ -1,0 +1,102 @@
+.menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #0F2027 0%, #203A43 45.68%, #2C5364 100.83%);
+  z-index: 10;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    background: none;
+    position: static;
+  }
+  &--open {
+    display: flex;
+  }
+  &__list {
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    margin-top: 63px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      width: max-content;
+      margin-top: 0;
+      gap: 10px;
+
+    }
+  }
+  &__link {
+    display: inline-block;
+    color: $snow;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    @media screen and (min-width: 1024px) {
+      
+    }
+    &--active {
+      color: $maize-crayola;
+    }
+    &:hover {
+      color: color.scale($maize-crayola, $lightness: -30%);
+    }
+  }
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &__social-link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--vk {
+      background-image: url(../img/vk.svg);
+      &:hover {
+        background-image: url(../img/vk-active.svg);
+      }
+    }
+    &--skype {
+      background-image: url(../img/skype.svg);
+      &:hover {
+        background-image: url(../img/skype-active.svg);
+      }
+    }
+    &--telegram {
+      background-image: url(../img/telegram.svg);
+      &:hover {
+        background-image: url(../img/telegram-active.svg);
+      }
+    }
+    &--linkedin {
+      background-image: url(../img/linkedin.svg);
+      &:hover {
+        background-image: url(../img/linkedin-active.svg);
+      }
+    }
+  }
+}

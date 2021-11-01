@@ -1,0 +1,46 @@
+.social {
+  list-style: none;
+  font-size: 0;
+  width: 24px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: flex-end;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+  &__link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    &--vk {
+      background-image: url(../img/vk.svg);
+      &:hover {
+        background-image: url(../img/vk-active.svg);
+      }
+    }
+    &--skype {
+      background-image: url(../img/skype.svg);
+      &:hover {
+        background-image: url(../img/skype-active.svg);
+      }
+    }
+    &--telegram {
+      background-image: url(../img/telegram.svg);
+      &:hover {
+        background-image: url(../img/telegram-active.svg);
+      }
+    }
+    &--linkedin {
+      background-image: url(../img/linkedin.svg);
+      &:hover {
+        background-image: url(../img/linkedin-active.svg);
+      }
+    }
+  }
+}

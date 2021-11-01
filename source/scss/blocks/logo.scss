@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+  width: 42px;
+  height: 39px;
+  &:hover &__border {
+    stroke: $maize-crayola;
+  }
+  &:hover &__text {
+    fill: $maize-crayola;
+  }
+  
+}

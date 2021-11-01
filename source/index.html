@@ -1,153 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,400;1,100&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/main.min.css">
   <title>Andrej Maier</title>
   <meta charset="utf-8">
 </head>
 <body>
 	<header class="main-header">
-		<nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+		<a class="logo"><svg width="42" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="41" height="38" rx="4.5" stroke="#C9DBE9" class="logo__border"/><path d="M18.133 17l3.492-9.648h.384L18.517 17h-.384zm-1.68 0l3.492-9.648h.372L16.837 17h-.384zm.84 0l3.48-9.648h.396L17.677 17h-.384zm7.872 0l-3.132-8.652.192-.54L25.549 17h-.384zm-.84 0l-2.7-7.476.18-.552L24.709 17h-.384zm-.84 0l-2.28-6.312.192-.54L23.869 17h-.384zm-3.396-3.192l.132-.36h1.584l.132.36h-1.848zm-.288.804l.132-.36h2.16l.132.36H19.8zm-.288.792l.132-.36h2.736l.132.36h-3zM17.729 31v-9.648h.36V31h-.36zm-1.584 0v-9.648h.36V31h-.36zm.792 0v-9.648h.36V31h-.36zm8.556 0v-9.648h.36V31h-.36zm-1.584 0v-9.648h.36V31h-.36zm.792 0v-9.648h.36V31h-.36zm-3.252-5.568l-.216-.324 2.244-3.252v.636l-2.028 2.94zm.48 2.076l-3.408-4.872v-.612l3.636 5.172-.228.312zm.012-1.38l-.216-.324 1.752-2.496v.624l-1.536 2.196zm-.492 2.088L18.52 24.04v-.636l3.144 4.488-.216.324zm.972-1.404l-.216-.312 1.272-1.812v.624l-1.056 1.5zM20.969 28.9l-2.448-3.48v-.636l2.664 3.804-.216.312z" fill="#C9DBE9" class="logo__text"/></svg></a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link menu__link--active">HOME</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">PROJECTS</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">ABOUT ME</a></li>
       </ul>
-      <button type="button" class="nav__mobile-btn nav__mobile-btn--close"></button>
+      <ul class="menu__social-list">
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--vk">VK</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--skype">Skype</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--telegram">Telegram</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--linkedin">LinkedIn</a></li>
+      </ul>
+      <button type="button" class="burger burger--close">Close</button>
     </nav>
-    <a href="mobile-menu.html" class="nav__mobile-btn"></a>
+    <a href="menu.html" class="burger burger--open">Open menu</a>
 	</header>
 	<main>
-    <section class="description">
-      <h1 class="description__title">Andrej<br>Maier</h1>
-      <p class="description__text">Junior Web-Entwickler<br>33 Years old, Heinsberg</p>
-      <p class="lang"><span class="lang--ru">ru</span><span class="lang--eng">eng</span></p>
-      <picture>
-        <source src="./img/i.webp" type="webp">
-        <img src="#" alt="Andrej Maier" class="description__img">
-      </picture>
-    </section>
-    <section class="about-me">
-      <h2 class="about-me__title"></h2>
-      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
-      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
-      <p class="about-me__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat eum, libero, modi vero nemo quam velit soluta eaque, praesentium excepturi explicabo fugiat earum distinctio sunt labore facere dolore cupiditate!</p>
-    </section>
-    <section class="skills">
-      <h2 class="skills__title">Skills</h2>
-      <p class="skills__text">I know</p>
-      <ul class="skills__list">
-        <li class="skills__item">
-          <h3 class="skills__item-title">HTML5</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">CSS3</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">JS</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">SASS</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">Gulp</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">Bootstrap</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">Figma</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-        <li class="skills__item">
-          <h3 class="skills__item-title">Photoshop</h3>
-          <p class="skills__indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-        </li>
-      </ul>
+    <h1 class="hidden">Andrej Maier</h1>
+    <section class="ad">
+      <h2 class="ad__title">ANDREJ MAIER</h2>
+      <p class="ad__text"><span class="ad__text--before">I AM</span> <span class="ad__text--after">A JUNIOR WEB DEVELOPER</span></p>
     </section>
 	</main>
 	<footer class="main-footer">
-    <h2>Contact</h2>
-    <p>Want to know more or just chat?<br> You are welcome!</p>
     <ul class="social">
-      <li class="social__item"><a href="" class="social__link"></a></li>
-      <li class="social__item"><a href="" class="social__link"></a></li>
-      <li class="social__item"><a href="" class="social__link"></a></li>
-      <li class="social__item"><a href="" class="social__link"></a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--vk">VK</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--skype">Skype</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--telegram">Telegram</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--linkedin">LinkedIn</a></li>
     </ul>
 	</footer>
-  <section class="modal">
-    <h2>Write Me</h2>
-    <form id="contact-form" class="my-form">
-      <input type="hidden" name="contact_number">
-      <label>Name</label>
-      <input type="text" name="user_name" id="name">
-      <label>Email</label>
-      <input type="email" name="user_email" id="email">
-      <label>Message</label>
-      <textarea name="message" id="message"></textarea>
-      <button type="submit" class="btn-submit">Send</button>
-    </form>
-  </section>
+  
   <script src="./js/main.min.js"></script>
 </body>
 </html>
