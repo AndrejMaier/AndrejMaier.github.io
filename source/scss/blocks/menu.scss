@@ -47,13 +47,18 @@
     text-decoration: none;
     font-size: 18px;
     @media screen and (min-width: 1024px) {
-      
+      padding: 10px 15px;
     }
     &--active {
       color: $maize-crayola;
+      @media screen and (min-width: 1024px) {
+        border-bottom: 2px solid $maize-crayola;
+      }
     }
-    &:hover {
+    &:hover,
+    &:hover &--active {
       color: color.scale($maize-crayola, $lightness: -30%);
+      border-bottom-color: color.scale($maize-crayola, $lightness: -30%);
     }
   }
   &__social-list {

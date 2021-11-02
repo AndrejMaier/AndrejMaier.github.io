@@ -2,12 +2,19 @@
   width: 280px;
   height: 140px;
   position: relative;
+  @media screen and (min-width: 1024px) {
+    width: 700px;
+  }
   &__title {
     font-size: 72px;
     text-align: center;
     padding: 0;
     margin: 0;
     line-height: 78px;
+    @media screen and (min-width: 1024px) {
+      font-size: 98px;
+      line-height: 98px;
+    }
   }
   &__text {
     position: absolute;
@@ -23,12 +30,25 @@
       color: $vermilion;
       writing-mode: vertical-lr;
       transform: rotate(180deg);
+      @media screen and (min-width: 1024px) {
+        top: -35px;
+        left: 150px;
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+        width: 65px;
+        height: 29px;
+      }
     }
     &--after {
       position: absolute;
       top: -70px;
       width: 280px;
       color:$maize-crayola;
+      @media screen and (min-width: 1024px) {
+        width: 415px;
+        top: 99px;
+        left: 287px;
+      }
     }
   }
 }

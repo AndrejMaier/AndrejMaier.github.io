@@ -7,6 +7,7 @@
 :root {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  font-weight: 400;
   color: $snow;
 }
 
@@ -22,11 +23,16 @@ header {
   margin: 0 auto;
 }
 
-main {
+.main {
   height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Zen Tokyo Zoo', cursive;
 }
 
 .hidden {
