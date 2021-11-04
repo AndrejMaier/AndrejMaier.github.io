@@ -3,46 +3,13 @@
 @import "./blocks/var.scss";
 //font-family: 'Roboto', sans-serif;
 //font-family: 'Zen Tokyo Zoo', cursive;
-
-:root {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: $snow;
-}
-
-body {
-  margin: 0;
-  padding: 20px;
-  background: linear-gradient(90deg, #0F2027 0%, #203A43 45.68%, #2C5364 100.83%);
-  min-width: 280px;
-}
-
-header {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.main {
-  height: calc(100vh - 80px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  font-size: 36px;
-  font-family: 'Zen Tokyo Zoo', cursive;
-}
-
-.hidden {
-  display: none;
-}
-
+@import "./scaffollding.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/burger.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/ad.scss";
+@import "./blocks/projects.scss";
 @import "./blocks/social.scss";
-
+@import "./blocks/form.scss";
+@import "./blocks/button.scss";

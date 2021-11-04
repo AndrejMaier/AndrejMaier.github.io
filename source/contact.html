@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,400;1,100&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.min.css">
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function() {
@@ -20,9 +19,14 @@
 						// these IDs from the previous steps
 						emailjs.sendForm('user_q4Dqid8I2rsG95gezSg', 'template_jwiet4q', '#contact-form')
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+      console.log('SUCCESS!', response.status, response.text);
+      document.querySelector("form").reset();
+      document.querySelector("#email").disabled = true;
+      document.querySelector("#message").disabled = true;
+      document.querySelector(".btn").disabled = true;
+
     }, function(error) {
-       console.log('FAILED...', error);
+      console.log('FAILED...', error);
     });
 				});
 		}
@@ -32,39 +36,45 @@
 </head>
 <body>
 	<header class="main-header">
-		<a href="index.html" class="logo">A<br>M</a>
-		<nav class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item"><a href="index.html">Home</a></li>
-				<li class="main-nav__item"><a href="projects.html">Projects</a></li>
-				<li class="main-nav__item"><a class="active">Contact</a></li>
-				<li class="main-nav__item"><a href="about.html">About</a></li>
-			</ul>
-		</nav>
+		<a class="logo"><svg width="42" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="41" height="38" rx="4.5" stroke="#C9DBE9" class="logo__border"/><path d="M18.133 17l3.492-9.648h.384L18.517 17h-.384zm-1.68 0l3.492-9.648h.372L16.837 17h-.384zm.84 0l3.48-9.648h.396L17.677 17h-.384zm7.872 0l-3.132-8.652.192-.54L25.549 17h-.384zm-.84 0l-2.7-7.476.18-.552L24.709 17h-.384zm-.84 0l-2.28-6.312.192-.54L23.869 17h-.384zm-3.396-3.192l.132-.36h1.584l.132.36h-1.848zm-.288.804l.132-.36h2.16l.132.36H19.8zm-.288.792l.132-.36h2.736l.132.36h-3zM17.729 31v-9.648h.36V31h-.36zm-1.584 0v-9.648h.36V31h-.36zm.792 0v-9.648h.36V31h-.36zm8.556 0v-9.648h.36V31h-.36zm-1.584 0v-9.648h.36V31h-.36zm.792 0v-9.648h.36V31h-.36zm-3.252-5.568l-.216-.324 2.244-3.252v.636l-2.028 2.94zm.48 2.076l-3.408-4.872v-.612l3.636 5.172-.228.312zm.012-1.38l-.216-.324 1.752-2.496v.624l-1.536 2.196zm-.492 2.088L18.52 24.04v-.636l3.144 4.488-.216.324zm.972-1.404l-.216-.312 1.272-1.812v.624l-1.056 1.5zM20.969 28.9l-2.448-3.48v-.636l2.664 3.804-.216.312z" fill="#C9DBE9" class="logo__text"/></svg></a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
+        <li class="menu__item"><a href="projects.html" class="menu__link">PROJECTS</a></li>
+        <li class="menu__item"><a class="menu__link menu__link--active">CONTACT</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">ABOUT ME</a></li>
+      </ul>
+      <ul class="menu__social-list">
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--vk">VK</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--skype">Skype</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--telegram">Telegram</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link menu__social-link--linkedin">LinkedIn</a></li>
+      </ul>
+      <button type="button" class="burger burger--close">Close</button>
+    </nav>
+    <a href="menu.html" class="burger burger--open">Open menu</a>
 	</header>
-	<main class="main-innerpage">
-		<h1 class="hidden">Contact</h1>
-		<section class="projects">
-			<h2>Write me</h2>
-			<form id="contact-form" class="my-form">
-				<input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send" class="btn-submit">
+	<main>
+		<h1>Write me</h1>
+		<form id="contact-form" class="my-form" autocomplete="off">
+			<input type="hidden" name="contact_number">
+      <input type="text" name="user_name" id="name" minlength="2" placeholder="Your name">
+      <label for="name" class="one">Name</label>
+      <input type="email" name="user_email" id="email" minlength="5" placeholder="Your email" disabled>
+      <label for="email" class="two">Email</label>
+      <textarea name="message" id="message" maxlength="200" minlength="10" placeholder="What you want!" disabled></textarea>
+      <label for="message" class="three">Message</label>
+      <input type="submit" value="Send" class="btn" disabled>
     </form>
-		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="social-footer">
-			<a href="https://vk.com" class="social-icon social-icon--vk" target="_blank">Vkontakte</a>
-			<a href="http://skype.com" class="social-icon social-icon--skype" target="_blank">Skype</a>
-			<a href="https://telegram.org" class="social-icon social-icon--telegram" target="_blank">Telegram</a>
-			<a href="https://www.linkedin.com" class="social-icon social-icon--linkedin" target="_blank">LinkedIn</a>
-		</section>		
+    <ul class="social">
+      <li class="social__item"><a href="#" class="social__link social__link--vk">VK</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--skype">Skype</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--telegram">Telegram</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--linkedin">LinkedIn</a></li>
+    </ul>
 	</footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>

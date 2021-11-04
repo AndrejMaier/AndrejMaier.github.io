@@ -56,6 +56,7 @@ function watchFiles() {
   gulp.watch([path.watch.scss], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], image);
+  gulp.watch([source_folder + "/projects/*/**"], projects);
 }
 
 function clean() {
@@ -122,6 +123,11 @@ function image() {
   .pipe(browsersync.stream())
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, image))
+function projects() {
+  return src(source_folder + "/projects/*/**")
+  .pipe(dest(project_folder + "/projects/"))
+}
+
+const build = gulp.series(clean, gulp.parallel(html, css, js, image, projects))
 const watch = gulp.parallel(build, browserSync, watchFiles);
 exports.default = watch;

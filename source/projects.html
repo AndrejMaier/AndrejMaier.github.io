@@ -14,7 +14,7 @@
       <ul class="menu__list">
         <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
         <li class="menu__item"><a class="menu__link menu__link--active">PROJECTS</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
+        <li class="menu__item"><a href="contact.html" class="menu__link">CONTACT</a></li>
         <li class="menu__item"><a href="#" class="menu__link">ABOUT ME</a></li>
       </ul>
       <ul class="menu__social-list">
@@ -28,20 +28,47 @@
     <a href="menu.html" class="burger burger--open">Open menu</a>
 	</header>
 	<main>
-    <h1>Andrej Maier</h1>
-    <ul class="projects">
-      <li class="projects__item">
-        <picture>
-          <img src="./img/device.jpg" alt="" srcset="">
-        </picture>
-        <section class="projects__annotation">
-          <h2>DEVICE</h2>
-          <p><a href="#">code</a> <a href="#">site</a></p>
-        </section>
-      </li>
-      <li class="projects__item"><a href="" class="projects__link"></a></li>
-      <li class="projects__item"><a href="" class="projects__link"></a></li>
-    </ul>
+    <h1>MY PROJECTS</h1>
+    <section class="projects">
+      <ul class="projects__list">
+        <li class="projects__item projects__item--red">
+          <picture >
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/device.webp">
+            <source media="(min-width: 1024px)" srcset="img/device.jpg">
+            <source type="image/webp" srcset="img/device-mobile.webp">
+            <img src="img/device-mobile.jpg" alt="Device" width="260" height="144" class="projects__img projects__img--red">
+          </picture>
+          <section class="projects__annotation">
+            <h2>DEVICE</h2>
+            <p><a href="https://github.com/AndrejMaier/53732-device" target="_black">code</a> <a href="./projects/device/index.html" target="_blank">site</a></p>
+          </section>
+        </li>
+        <li class="projects__item projects__item--blue">
+          <picture>
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/mishka.webp">
+            <source media="(min-width: 1024px)" srcset="img/mishka.jpg">
+            <source type="image/webp" srcset="img/mishka-mobile.webp">
+            <img src="img/mishka-mobile.jpg" alt="Mishka" width="260" height="144" class="projects__img projects__img--blue">
+          </picture>
+          <section class="projects__annotation">
+            <h2>Mishka</h2>
+            <p><a href="#">code</a> <a href="./projects/miska/index.html" target="_blank">site</a></p>
+          </section>
+        </li>
+        <li class="projects__item projects__item--yellow">
+          <picture>
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/keksobooking.webp">
+            <source media="(min-width: 1024px)" srcset="img/keksobooking.jpg">
+            <source type="image/webp" srcset="img/keksobooking-mobile.webp">
+            <img src="img/keksobooking-mobile.jpg" alt="Keksobooking" width="260" height="144" class="projects__img projects__img--yellow">
+          </picture>
+          <section class="projects__annotation">
+            <h2>Keksobooking</h2>
+            <p><a href="https://github.com/AndrejMaier/53732-keksobooking-23" target="_blank">code</a> <a href="./projects/keksobooking/index.html" target="_blank">site</a></p>
+          </section>
+        </li>
+      </ul>
+    </section>
 	</main>
 	<footer class="main-footer">
     <ul class="social">
@@ -51,7 +78,6 @@
       <li class="social__item"><a href="#" class="social__link social__link--linkedin">LinkedIn</a></li>
     </ul>
 	</footer>
-  
   <script src="./js/main.min.js"></script>
 </body>
 </html>

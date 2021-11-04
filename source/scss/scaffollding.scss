@@ -1,0 +1,45 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: $snow;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(90deg, #0F2027 0%, #203A43 45.68%, #2C5364 100.83%);
+  min-width: 280px;
+}
+
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.main {
+  height: calc(100vh - 83px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}

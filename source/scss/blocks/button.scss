@@ -1,0 +1,18 @@
+.btn {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 28px;
+  color: $snow;
+  border: none;
+  background-color: $maize-crayola;
+  border-radius: 10px;
+  padding: 10px 45px;
+  &:active {
+    background-color: color.scale($maize-crayola, $lightness: -20%);
+  }
+  &:disabled {
+    background-color: color.scale($maize-crayola, $lightness: -50%);
+    color: lightgray;
+  }
+}
