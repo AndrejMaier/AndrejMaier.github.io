@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,400;1,100&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-  <title>Andrej Maier</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Junior Web-Developer Andrej Maier</title>
 </head>
 <body>
-	<header class="main-header">
-		<a class="logo">A<br>M</a>
-		<nav class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item"><a class="active">Home</a></li>
-				<li class="main-nav__item"><a href="projects.html">Projects</a></li>
-				<li class="main-nav__item"><a href="contact.html">Contact</a></li>
-				<li class="main-nav__item"><a href="about.html">About</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main class="main-homepage">
-		<h1 class="hidden">Andrej Maier - Web developer</h1>
-		<p class="title">
-			<span class="title--up">I AM</span>ANDREJ MAIER<span class="title--down">A JUNIOR WEB DEVELOPER</span>
-		</p>
-	</main>
-	<footer class="main-footer">
-		<section class="social-footer">
-			<a href="https://vk.com" class="social-icon social-icon--vk" target="_blank">Vkontakte</a>
-			<a href="http://skype.com" class="social-icon social-icon--skype" target="_blank">Skype</a>
-			<a href="https://telegram.org" class="social-icon social-icon--telegram" target="_blank">Telegram</a>
-			<a href="https://www.linkedin.com" class="social-icon social-icon--linkedin" target="_blank">LinkedIn</a>
-		</section>		
-	</footer>
+  <header>
+    <a href="#" class="logo">
+      <!-- <img src="img/logo.svg" alt="Logo" class="logo__img" width="85" height="38"> -->
+      <svg width="85" height="38" viewBox="0 0 63 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="logo__img" d="M14.2575 14.0469V9.5625C14.2575 8.94792 14.1377 8.36979 13.8981 7.82812C13.669 7.27604 13.3512 6.79688 12.945 6.39062C12.5387 5.98438 12.0596 5.66667 11.5075 5.4375C10.9658 5.19792 10.3877 5.07812 9.77312 5.07812C9.15854 5.07812 8.57521 5.19792 8.02312 5.4375C7.48146 5.66667 7.0075 5.98438 6.60125 6.39062C6.195 6.79688 5.87208 7.27604 5.6325 7.82812C5.40333 8.36979 5.28875 8.94792 5.28875 9.5625V14.0469H14.2575ZM18.7419 23H14.2575V18.5156H5.28875V23H0.82V9.5625C0.82 8.32292 1.05437 7.16146 1.52312 6.07812C1.99187 4.98438 2.62729 4.03125 3.42937 3.21875C4.24187 2.40625 5.18979 1.76562 6.27312 1.29688C7.36687 0.828125 8.53354 0.59375 9.77312 0.59375C11.0127 0.59375 12.1742 0.828125 13.2575 1.29688C14.3512 1.76562 15.3044 2.40625 16.1169 3.21875C16.9294 4.03125 17.57 4.98438 18.0387 6.07812C18.5075 7.16146 18.7419 8.32292 18.7419 9.5625V23ZM27.4294 21.4062C27.4294 21.7812 27.3617 22.1354 27.2262 22.4688C27.0908 22.7917 26.9033 23.0729 26.6637 23.3125C26.4242 23.5521 26.1429 23.7396 25.82 23.875C25.4971 24.0208 25.1481 24.0938 24.7731 24.0938C24.4085 24.0938 24.0596 24.0208 23.7262 23.875C23.4033 23.7396 23.1169 23.5521 22.8669 23.3125C22.6273 23.0729 22.4346 22.7917 22.2887 22.4688C22.1533 22.1354 22.0856 21.7812 22.0856 21.4062C22.0856 21.0417 22.1533 20.6979 22.2887 20.375C22.4346 20.0521 22.6273 19.7708 22.8669 19.5312C23.1169 19.2917 23.4033 19.1042 23.7262 18.9688C24.0596 18.8229 24.4085 18.75 24.7731 18.75C25.1481 18.75 25.4971 18.8229 25.82 18.9688C26.1429 19.1042 26.4242 19.2917 26.6637 19.5312C26.9033 19.7708 27.0908 20.0521 27.2262 20.375C27.3617 20.6979 27.4294 21.0417 27.4294 21.4062ZM53.6331 23H49.1644V7C49.1644 6.6875 49.1019 6.39583 48.9769 6.125C48.8623 5.85417 48.7008 5.61979 48.4925 5.42188C48.2946 5.21354 48.0602 5.05208 47.7894 4.9375C47.5185 4.82292 47.2269 4.76562 46.9144 4.76562C46.6019 4.76562 46.3102 4.82292 46.0394 4.9375C45.7685 5.05208 45.529 5.21354 45.3206 5.42188C45.1227 5.61979 44.9665 5.85417 44.8519 6.125C44.7373 6.39583 44.68 6.6875 44.68 7V23H40.1956V7C40.1956 6.6875 40.1383 6.39583 40.0238 6.125C39.9092 5.85417 39.7477 5.61979 39.5394 5.42188C39.3415 5.21354 39.1071 5.05208 38.8363 4.9375C38.5654 4.82292 38.2738 4.76562 37.9613 4.76562C37.6488 4.76562 37.3571 4.82292 37.0863 4.9375C36.8154 5.05208 36.5758 5.21354 36.3675 5.42188C36.1696 5.61979 36.0133 5.85417 35.8988 6.125C35.7842 6.39583 35.7269 6.6875 35.7269 7V23H31.2425V7C31.2425 6.07292 31.4144 5.20312 31.7581 4.39062C32.1123 3.56771 32.5915 2.85417 33.1956 2.25C33.8102 1.63542 34.5238 1.15625 35.3363 0.8125C36.1592 0.458333 37.0342 0.28125 37.9613 0.28125C38.7946 0.28125 39.5967 0.432292 40.3675 0.734375C41.1383 1.02604 41.831 1.45312 42.4456 2.01562C43.0602 1.45312 43.7477 1.02604 44.5081 0.734375C45.279 0.432292 46.081 0.28125 46.9144 0.28125C47.8415 0.28125 48.7113 0.458333 49.5238 0.8125C50.3467 1.15625 51.0602 1.63542 51.6644 2.25C52.279 2.85417 52.7581 3.56771 53.1019 4.39062C53.456 5.20312 53.6331 6.07292 53.6331 7V23ZM62.4456 21.4062C62.4456 21.7812 62.3779 22.1354 62.2425 22.4688C62.1071 22.7917 61.9196 23.0729 61.68 23.3125C61.4404 23.5521 61.1592 23.7396 60.8363 23.875C60.5133 24.0208 60.1644 24.0938 59.7894 24.0938C59.4248 24.0938 59.0758 24.0208 58.7425 23.875C58.4196 23.7396 58.1331 23.5521 57.8831 23.3125C57.6435 23.0729 57.4508 22.7917 57.305 22.4688C57.1696 22.1354 57.1019 21.7812 57.1019 21.4062C57.1019 21.0417 57.1696 20.6979 57.305 20.375C57.4508 20.0521 57.6435 19.7708 57.8831 19.5312C58.1331 19.2917 58.4196 19.1042 58.7425 18.9688C59.0758 18.8229 59.4248 18.75 59.7894 18.75C60.1644 18.75 60.5133 18.8229 60.8363 18.9688C61.1592 19.1042 61.4404 19.2917 61.68 19.5312C61.9196 19.7708 62.1071 20.0521 62.2425 20.375C62.3779 20.6979 62.4456 21.0417 62.4456 21.4062Z" fill="#BB342F"/>
+        </svg>
+    </a>
+  </header>
+  <main>
+    <h1>I`ll be here soon</h1>
+  </main>
+  <footer>
+    <a class="copyright">&#169; Andrej Maier</a>
+  </footer>
 </body>
 </html>
